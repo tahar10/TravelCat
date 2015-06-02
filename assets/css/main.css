@@ -19,9 +19,6 @@ time, mark, audio, video {
 	vertical-align:baseline;
 	background:transparent;
 }
-html {
-  background: url('../img/background-img.jpg') no-repeat;
-}
 
 body {
 	line-height:1;
@@ -95,3 +92,16 @@ input, select {
 }
 
 /* // RESET */
+
+.background-home {
+  background: url('../img/background-img.jpg') no-repeat;
+}
+.background-wall {
+    background-color: #d8e1e7;
+}
+.background-add {
+  background: url('../img/img-background-add.jpg') no-repeat;
+}
+.background-body {
+    background-color: #f1f1f2;
+}
