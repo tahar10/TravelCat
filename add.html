@@ -1,30 +1,38 @@
 <!doctype html>
-<html>
+<!--[if lte IE 6]> <html class="no-js ie6 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]><script src="assets/js/html5shiv.js"></script><![endif]-->
     <title>TravelCat</title>
-    <link rel="stylesheet" href="assets/css/main.css" </head>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+</head>
 
-    <body class="background-add">
-        <header class="heading-add">
-            <div>
-                <h2>Ajout d'une photo ou d'une vidéo</h2>
-            </div>
-        </header>
-
+<body class="background-add">
+    <header class="heading-add">
         <div>
-            <form name="addForm" method="post" action="#">
-                <input type="text" value="" placeholder="Titre / humeur"/>
-                <input type="button" value="+" /> 
-                <textarea name="description" rows="10" cols="50" placeholder="Description"></textarea>
-                <input type="button" value="" class=""/>
-                <input type="button" value="" class=""/>
-                <input type="submit" value="" class=""/>
-
-            </form>
+            <h2>Ajout d'une photo ou d'une vidéo</h2>
         </div>
-    </body>
+    </header>
+
+    <div class="add-container">
+        <form name="addForm" method="post" action="#">
+            <input class="input-titre-humeur" type="text" value="" placeholder="Titre / humeur" />
+            <input class="input-plus" type="button" value="+" />
+            <textarea class="text-description" name="description" placeholder="Description"></textarea>
+            <input class="btn-edit" type="button" value="" />
+            <input class="btn-geoloc" type="button" value="" />
+            <input class="btn-envoi" type="submit" value="" />
+
+        </form>
+    </div>
+</body>
 
 </html>

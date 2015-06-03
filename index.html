@@ -1,11 +1,19 @@
 <!doctype html>
-<html>
+<!--[if lte IE 6]> <html class="no-js ie6 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]><script src="assets/js/html5shiv.js"></script><![endif]-->
     <title>Bienvenue sur TravelCat</title>
-    <link rel="stylesheet" href="assets/css/main.css" </head>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+</head>
 
     <body class="background-home">
         
@@ -21,15 +29,15 @@
         <div class="main">
             <div class="text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.Lorem ipsum dolor sit amet, eiusmod tempor incididunt.
+                    Lorem ipsum dolor sit amet, con-<br/>sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.Lorem ipsum dolor sit amet, eiusmod tempor incididunt.
                 </p>
             </div>
             <div class="container">
                 <div class="form-connexion">
                     <form name="indexFormConnexion" method="post" action="./wall.html">
-                        <input type="text" value="" placeholder="Adresse email..." />
-                        <input type="password" value="" placeholder="Mot de passe..." />
-                        <input type="submit" value="Connexion" />
+                        <input class="input-email" type="text" value="" placeholder="Adresse email..." />
+                        <input class="input-password"type="password" value="" placeholder="Mot de passe..." />
+                        <input class="input-connexion" type="submit" value="Connexion" />
                     </form>
                 </div>
                 <div class="link"> 
@@ -41,7 +49,7 @@
         <footer class="foot">
             <div class="form-inscription">
                 <form name="indexFormInscription" method="post" action="#">
-                    <input type="submit" value="S'inscrire" />
+                    <input class="btn-inscription" type="submit" value="S'inscrire" />
                 </form>
             </div>
         </footer>
