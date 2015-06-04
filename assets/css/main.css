@@ -171,7 +171,11 @@ img {
 }
 
 .background-home {
-    background: url('../img/background-img.jpg') no-repeat;
+    margin: 0;
+    padding: 0;
+    background: url('../img/background-img.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .background-wall {
@@ -180,7 +184,11 @@ img {
 }
 
 .background-add {
-    background: url('../img/img-background-add.jpg') no-repeat;
+    margin: 0;
+    padding: 0;
+    background: url('../img/img-background-add.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .branding {
@@ -294,8 +302,7 @@ img {
     height: 26px;
     float: left;
     margin-top: -31px;
-    margin-left:2px;
-    
+    margin-left: 2px;
 }
 
 #recherche input[type=text] {
@@ -306,8 +313,9 @@ img {
     height: 39px;
     background-color: #f1f1f2;
 }
+
 #recherche input {
-   border: none;
+    border: none;
 }
 
 .menu {
@@ -521,4 +529,3 @@ h2 {
     border: none;
     border-radius: 4px;
 }
-
