@@ -171,11 +171,7 @@ img {
 }
 
 .background-home {
-    margin: 0;
-    padding: 0;
-    background: url('../img/background-img.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: url('../img/background-img.jpg') no-repeat;
 }
 
 .background-wall {
@@ -184,11 +180,7 @@ img {
 }
 
 .background-add {
-    margin: 0;
-    padding: 0;
-    background: url('../img/img-background-add.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: url('../img/img-background-add.jpg') no-repeat;
 }
 
 .branding {
