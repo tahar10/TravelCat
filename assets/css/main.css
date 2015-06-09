@@ -1,193 +1,239 @@
-/* RESET */
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-body {
-    line-height: 1;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-nav ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none;
-}
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-input,
-select {
-    vertical-align: middle;
-    display: block;
-}
-/* // RESET */
-
 img {
     height: auto;
     max-width: 100%;
 }
 
 .background-home {
-    background: url('../img/background-img.jpg') no-repeat;
+    background: url('../img/img_home_desktop.jpg') no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
 }
 
+.heading-home {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
+}
 .background-wall {
     background-color: #d8e1e7;
     width: 320px;
 }
-
 .background-add {
     background: url('../img/img-background-add.jpg') no-repeat;
 }
-
-.branding {
-    margin-top: 16px;
-    margin-left: 72px;
+.clearfix {
+    clear: both;
+}
+.grid,
+.row,
+.col {
+    box-sizing: border-box;
+}
+.row,
+.col {
+    overflow: hidden;
+}
+.grid {
+    margin: 0 auto;
+    max-width:1024px;
+}
+.row {
+    margin: 0 -20px;
+}
+.col {
+    padding: 20px;
+}
+@media all and (min-width:620px) {
+    .col {
+        float: left;
+    }
+    
+    .col-6 {
+        width: 100%;
+    }
+    
+    .col-5 {
+        width: 83.33333333333%;
+    }
+    
+    .col-4 {
+        width: 66.66666666667%;
+    }
+    
+    .col-3 {
+        width: 50%;
+    }
+    
+    .col-2 {
+        width: 33.33333333333%;
+    }
+    
+    .col-1 {
+        width: 16.66666666667%;
+    }
+    
+  
+}
+.section_1 {
+    color: #e9e8e2;
+    font-size: 16px;
+    font-family: latolight;
+    text-align: center;
+    line-height: 19px;
+    text-indent: 4px;
+    margin-top: 10px;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.section_2 {
+    margin-top: 17px;
+    margin-left:12%;
+    margin-right:12%;
+    background-color: #9e9e8f;
+    border-radius: 4px;
+    padding-bottom: 11px;
+    padding-left:2%;
+    padding-top:3%;
+    max-width: 1024px;
+    text-align:center;
+}
+.section_3 {
+    margin-top:6%;
+    margin-left:30%;
+    margin-right:30%;
+    background-color: #1f9c69;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    height: 41px;
+    max-width: 577px;
+    
+}
+.btn-inscription {
+    font-size: 14px;
+    font-family: latobold;
+    background-color: #1f9c69;
+    border: none;
+    color: #ffffff;
+}
+.form-inscription {
+    margin-top:-10px;
+}
+.email {
+    margin-bottom: 11px;
+    margin-left: 18px;
+    margin-right: 38px;
+    background-color: #fefefe;
+    border: none;
+    text-align: left;
+    border-radius: 4px;
+    height: 41px;
+    min-width:100px;
+    
+}
+.input-email {
+    font-family: latoregular;
+    font-size: 14px;
+    background-color: #fefefe;
+    border: none;
+    color: #85887c;
+    margin-top: 10px;
+    max-width: 90px;
+}
+.password {
+    margin-bottom: 11px;
+    margin-left: 18px;
+    margin-right: 38px;
+    background-color: #fefefe;
+    border: none;
+    text-align: left;
+    border-radius: 4px;
+    height: 41px;
+    min-width:100px;
+}
+.input-password {
+    font-family: latoregular;
+    font-size: 14px;
+    background-color: #fefefe;
+    border: none;
+    color: #85887c;
+    margin-top: 10px;
+    
+    max-width: 90px;
+}
+.connexion {
+    margin-bottom: 11px;
+    margin-left:10%;
+    margin-right: 50px;
+    background-color: #0288d1;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    height: 41px;
+    min-width:100px;
+}
+.input-connexion {
+    font-family: latobold;
+    font-size: 14px;
+    background-color: #0288d1;
+    border: none;
+    color: #feffff;
+    margin-top: 10px;
+    padding-right: 10px;
+    max-width: 90px;
+}
+.link {
+    color: #395665;
+    font-size: 10px;
+    text-align: center;
+}
+.link a {
+    color: #0e415c;
+    font-family: latobold;
+}
+.col a {
+    display: block;
 }
 
+@media all and (max-width:620px) {
+.foot {
+    display: none;
+}
+}
+.foot {
+      background-color:#0f100b;  
+    text-align:center;
+    margin-top:12%;
+        }
+.foot a {
+    font-family:latoregular;
+    font-size:14px;
+    color:#d4d4d4;
+}
+.copyright {
+    color:#d4d4d4;
+    font-family:latolight;
+    font-size:14px;
+}
+
+
+/*@media only screen and (max-width:500px) {
+	.row {
+		width : 100%;
+	}
+	.row > div { 
+		margin : 0 1%;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { 
+		width : 98%; 
+		float : none;
+	}
+}*/
+/*
 .text {
     width: 245px;
     height: 129px;
@@ -520,4 +566,4 @@ h2 {
     background: url('../img/img-bouton-envoyer.png') no-repeat;
     border: none;
     border-radius: 4px;
-}
+}*/

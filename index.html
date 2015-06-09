@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]><script src="assets/js/html5shiv.js"></script><![endif]-->
     <title>Bienvenue sur TravelCat</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/font.css">
 </head>
@@ -19,39 +20,84 @@
 
 
     <header class="heading-home">
-        <div class="branding">
-            <a href="index.html" title="Retour à l'accueil">
-                <img src="assets/img/logo.png" height="47" width="166" alt="Logo TravelCat">
-            </a>
+        <div class="grid">
+            <div class="row">
+                <div class="col col-6">
+                    <a class="logo" href="index.html" title="Retour à l'accueil">
+                        <img src="assets/img/logo.png" height="47" width="166" alt="Logo TravelCat">
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="main">
-        <div class="text">
-            <p>
-                Lorem ipsum dolor sit amet, con-
-                <br/>sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.Lorem ipsum dolor sit amet, eiusmod tempor incididunt.
-            </p>
-        </div>
-        <div class="container">
-            <div class="form-connexion">
-                <form name="indexFormConnexion" method="post" action="./wall.html">
-                    <input class="input-email" type="text" value="" placeholder="Adresse email..." />
-                    <input class="input-password" type="password" value="" placeholder="Mot de passe..." />
-                    <input class="input-connexion" type="submit" value="Connexion" />
-                </form>
+
+    <main>
+        <section class="section_1">
+            <div class="grid">
+                <div class="row">
+                    <div class="col col-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.Lorem ipsum dolor sit amet, eiusmod tempor incididunt.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="link">
-                <a href="#" title="Mot de passe oublié?">Mot de passe oublié?</a>
+        </section>
+
+        <section class="section_2">
+            <div class="grid">
+                <div class="row">
+                    <form name="indexFormConnexion" method="post" action="./wall.html">
+                        <div class=" col col-2">
+                            <div class="email">
+                                <input class="input-email" type="text" value="" placeholder="Adresse email..." />
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="password">
+                                <input class="input-password" type="password" value="" placeholder="Mot de passe..." />
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="connexion">
+                                <input class="input-connexion" type="submit" value="Connexion" />
+                            </div>
+                            <a class="link" href="#" title="Mot de passe oublié?">Mot de passe oublié?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section class="section_3">
+            <div class="grid">
+                <div class="row">
+                    <div class="col col-6">
+                        <form class="form-inscription" name="indexFormInscription" method="post" action="#">
+                            <input class="btn-inscription" type="submit" value="S'inscrire" />
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="foot">
-        <div class="form-inscription">
-            <form name="indexFormInscription" method="post" action="#">
-                <input class="btn-inscription" type="submit" value="S'inscrire" />
-            </form>
+        <div class="grid">
+            <div class="row">
+                <div class="col col-6">
+                    <div class="copyright">
+                        <p>@Copyright Tous droits réservés à Travel Cat</p>
+                    </div>
+                    <a href="#" title="Mentions légales">Mentions légales</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </footer>
 
