@@ -18,98 +18,316 @@
 
 <body class="background-wall">
 
-    <header class="heading-wall">
+    <div class="page">
 
-        <div>
-            <form name="wallFormSearch" method="post" id="recherche">
-                <input name="saisie" type="text" value="" />
-                <input class="loupe" type="submit" value="" />
-            </form>
-        </div>
-
-        <div class="menu">
-            <a href="#" title="Menu">
-                <img src="assets/img/img-menu.png" height="40" width="53" alt="Icone menu">
-            </a>
-        </div>
-
-    </header>
-
-    <div>
-        <div>
-            <form name="wallFormAdd" method="post" action="./add.html">
-                <input class="input-ajout" type="submit" value="Ajouter une photo ou une vidéo" />
-            </form>
-
-        </div>
-
-
-        <div class="post">
-            <form name="wallFormPost1" method="post" action="#">
-                <div class="bloc1">
-                    <h3>Titre</h3>
-                    <img src="assets/img/img-cat1.jpg" height="159" width="238" alt="Photo chat sur le bord d'une fenêtre">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="bloc2">
-                    <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
-                    <p>par Zinka</p>
-                </div>
-
-                <div class="bloc3">
-                    <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
-                    <p>Paris, le 24/04/2015</p>
-                </div>
-
-                <div class="bar">
-                    <div class="icone1">
-                        <img src="assets/img/img-coeur.png" height="27" width="30" alt="icone aimer">
-                    </div>
-                    <div class="icone2">
-                        <img src="assets/img/img-commentaire.png" height="31" width="30" alt="icone commentaires">
-                    </div>
-                    <div class="icone3">
-                        <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+        <header>
+            <div class="grid">
+                <div class="row">
+                    <div class="col col-6">
+                        <div>
+                            <form name="wallFormSearch" method="post" id="recherche">
+                                <input name="saisie" type="text" value="" />
+                                <input class="loupe" type="submit" value="" />
+                            </form>
+                        </div>
+                        <div class="menu" id="menu">
+                            <a href="#" title="Menu">
+                                <img src="assets/img/img-menu.png" height="40" width="53" alt="Icone menu">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
+        </header>
 
-        <div class="post">
-            <form name="wallFormPost2" method="post" action="#">
-                <div class="bloc1">
-                    <h3>Titre</h3>
-                    <img src="assets/img/img-cat2.jpg" height="159" width="238" alt="Photo chat qui regarde par le hublot d'un avion">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
 
-                <div class="bloc2">
-                    <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
-                    <p>par Zinka</p>
-                </div>
+        <nav>
+            <div class="grid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo-wall">
+                            <a href="index.html" title="Retour à l'accueil">
+                                <img src="assets/img/img-logo-wall.png" height="32" width="114" alt="Logo TravelCat">
+                            </a>
+                        </div>
 
-                <div class="bloc3">
-                    <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
-                    <p>Paris, le 24/04/2015</p>
-                </div>
+                        <ul class="nav" role="navigation">
+                            <li class="nav-item">
+                                <a href="#"><img src="assets/img/img-wall-lieux.png" height="24" width="112" alt="Lieux les plus catfriendly">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><img src="assets/img/img-wall-forum.png" height="24" width="76" alt="Forum">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><img src="assets/img/img-wall-historique.png" height="24" width="106" alt="Historique des votes">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><img src="assets/img/img-wall-compte.png" height="24" width="115" alt="Mon compte">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><img src="assets/img/img-wall-profil.png" height="23" width="105" alt="Mon profil">
+                                </a>
+                            </li>
+                        </ul>
 
-                <div class="bar">
-                    <div class="icone1">
-                        <img src="assets/img/img-coeur.png" height="27" width="30" alt="icone aimer">
+                        <div class="search">
+                            <img src="assets/img/img-wall-loupe.png" height="23" width="23" alt="Rechercher">
+                            <input type="search" id="s" class="search-field" placeholder="Rechercher...">
+                        </div>
+
                     </div>
-                    <div class="icone2">
-                        <img src="assets/img/img-commentaire.png" height="31" width="30" alt="icone commentaires">
-                    </div>
-                    <div class="icone3">
-                        <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </nav>
+
+
+        <main>
+            <div class="section_4">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-6">
+                            <form name="wallFormAdd" method="post" action="./add.html">
+                                <input class="input-ajout" type="submit" value="Ajouter une photo ou une vidéo" />
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
 
+            <div class="section_5">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col col-3">
+                            <div class="post">
+                                <form name="wallFormPost1" method="post" action="#">
+                                    <div class="bloc1">
+                                        <h3>Titre</h3>
+                                        <img src="assets/img/cat1.jpg" height="187" width="280" alt="Photo chat qui regarde par le hublot d'un avion">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="bloc2">
+                                        <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
+                                        <p>par Zinka</p>
+                                    </div>
+
+                                    <div class="bloc3">
+                                        <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
+                                        <p>Toronto, le 01/05/2015</p>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="icone1">
+                                            <img src="assets/img/img-coeur-rouge.png" height="32" width="35" alt="icone aimer">
+                                        </div>
+                                        <div class="icone2">
+                                            <img src="assets/img/img-commentaire-vert.png" height="36" width="35" alt="icone commentaires">
+                                        </div>
+                                        <div class="icone3">
+                                            <img src="assets/img/img-partage-bleu.png" height="28" width="29" alt="icone partage">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col col-3">
+                            <div class="post">
+                                <form name="wallFormPost2" method="post" action="#">
+                                    <div class="bloc1">
+                                        <h3>Titre</h3>
+                                        <img src="assets/img/cat2.jpg" height="187" width="280" alt="Photo chat à coté d'un verre de vin">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="bloc2">
+                                        <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
+                                        <p>par Zinka</p>
+                                    </div>
+
+                                    <div class="bloc3">
+                                        <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
+                                        <p>Nantes, le 25/05/2015</p>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="icone1">
+                                            <img src="assets/img/img-coeur-9999.png" height="32" width="35" alt="icone aimer">
+                                        </div>
+                                        <div class="icone2">
+                                            <img src="assets/img/img-commentaire-9999.png" height="36" width="35" alt="icone commentaires">
+                                        </div>
+                                        <div class="icone3">
+                                            <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="section_6">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col col-3">
+                            <div class="post">
+                                <form name="wallFormPost3" method="post" action="#">
+                                    <div class="bloc1">
+                                        <h3>Titre</h3>
+                                        <img src="assets/img/cat3.jpg" height="187" width="280" alt="Photo chat sur le bord d'une fenêtre">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="bloc2">
+                                        <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
+                                        <p>par Zinka</p>
+                                    </div>
+
+                                    <div class="bloc3">
+                                        <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
+                                        <p>Londres, le 24/04/2015</p>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="icone1">
+                                            <img src="assets/img/img-coeur.png" height="27" width="30" alt="icone aimer">
+                                        </div>
+                                        <div class="icone2">
+                                            <img src="assets/img/img-commentaire.png" height="31" width="30" alt="icone commentaires">
+                                        </div>
+                                        <div class="icone3">
+                                            <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col col-3">
+                            <div class="post">
+                                <form name="wallFormPost4" method="post" action="#">
+                                    <div class="bloc1">
+                                        <h3>Titre</h3>
+                                        <img src="assets/img/cat4.jpg" height="187" width="280" alt="Photo chat qui bronze">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="bloc2">
+                                        <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
+                                        <p>par Zinka</p>
+                                    </div>
+
+                                    <div class="bloc3">
+                                        <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
+                                        <p>Toronto, le 01/05/2015</p>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="icone1">
+                                            <img src="assets/img/img-coeur-9999.png" height="32" width="35" alt="icone aimer">
+                                        </div>
+                                        <div class="icone2">
+                                            <img src="assets/img/img-commentaire-9999.png" height="36" width="35" alt="icone commentaires">
+                                        </div>
+                                        <div class="icone3">
+                                            <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="section_7">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col col-3">
+                            <div class="post">
+                                <form name="wallFormPost5" method="post" action="#">
+                                    <div class="bloc1">
+                                        <h3>Titre</h3>
+                                        <img src="assets/img/cat5.jpg" height="187" width="280" alt="Photo chat au bord de la mer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="bloc2">
+                                        <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
+                                        <p>par Zinka</p>
+                                    </div>
+
+                                    <div class="bloc3">
+                                        <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
+                                        <p>Mexico, le 22/04/2015</p>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="icone1">
+                                            <img src="assets/img/img-coeur.png" height="27" width="30" alt="icone aimer">
+                                        </div>
+                                        <div class="icone2">
+                                            <img src="assets/img/img-commentaire.png" height="31" width="30" alt="icone commentaires">
+                                        </div>
+                                        <div class="icone3">
+                                            <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col col-3">
+                            <div class="post">
+                                <form name="wallFormPost6" method="post" action="#">
+                                    <div class="bloc1">
+                                        <h3>Titre</h3>
+                                        <img src="assets/img/cat6.jpg" height="187" width="280" alt="Photo chatsur des pierres">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="bloc2">
+                                        <img src="assets/img/img-profil.png" height="13" width="13" alt="Photo profil">
+                                        <p>par Zinka</p>
+                                    </div>
+
+                                    <div class="bloc3">
+                                        <img src="assets/img/img-geoloc.png" height="13" width="9" alt="icone géolocalisation">
+                                        <p>Dublin, le 01/05/2015</p>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="icone1">
+                                            <img src="assets/img/img-coeur-9999.png" height="32" width="35" alt="icone aimer">
+                                        </div>
+                                        <div class="icone2">
+                                            <img src="assets/img/img-commentaire-9999.png" height="36" width="35" alt="icone commentaires">
+                                        </div>
+                                        <div class="icone3">
+                                            <img src="assets/img/img-partage.png" height="24" width="24" alt="icone partage">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </main>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/wall.js"></script>
 </body>
 
 </html>
