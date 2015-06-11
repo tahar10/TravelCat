@@ -568,7 +568,7 @@ h3 {
 
 .text-description {
     min-width: 94%;
-    height: 183px;
+    height: 120px;
     background-color: ffffff;
     border: none;
     border-radius: 4px;
@@ -579,36 +579,61 @@ h3 {
     font-size: 14px;
     color: #8c8a8a;
 }
-
-.btn-edit {
+.edit {
+    background-color: #0288d1;
     min-width: 29%;
     height: 40px;
     float: left;
     margin-left: 3%;
     margin-top: 8px;
-    background: url('../img/img-crayon.png') no-repeat;
-    border: none;
     border-radius: 4px;
+    text-align: center;
+}
+.btn-edit {
+    
+    background: url('../img/crayon-transparent.png') no-repeat;
+    width:28px;
+    height: 28px;
+    border: none;
+    margin-top: 5px;
+    
+}
+.geoloc {
+    background-color: #0288d1;
+    min-width: 29%;
+    height: 40px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 8px;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .btn-geoloc {
-    min-width: 29%;
-    height: 40px;
-    float: left;
-    margin-left: 36%;
-    margin-top: 8px;
-    background: url('../img/img-bouton-geo.png') no-repeat;
+    
+    background: url('../img/boussole-transp.png') no-repeat;
     border: none;
-    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
 }
-
-.btn-envoi {
+    
+.envoi {
+    background-color: #ffe440;
     min-width: 29%;
     height: 40px;
     float: left;
     margin-left: 3%;
     margin-top: 8px;
-    background: url('../img/img-bouton-envoyer.png') no-repeat;
-    border: none;
     border-radius: 4px;
+    text-align: center;
 }
+.btn-envoi {
+    
+    background: url('../img/fleche-envoi.png') no-repeat;
+    border: none;
+    width:28px;
+    height: 28px;
+    margin-top: 5px;
+}
+    
