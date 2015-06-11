@@ -1,11 +1,11 @@
-img {
-    height: auto;
-    max-width: 100%;
-}
-
 header,
 footer {
     overflow: hidden;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 .background-home {
@@ -17,9 +17,9 @@ footer {
 }
 
 .heading-home {
+    padding-top: 20px;
     position: relative;
     text-align: center;
-    padding-top: 20px;
 }
 
 .background-wall {
@@ -33,13 +33,14 @@ footer {
     padding: 0;
     -webkit-background-size: cover;
 }
+
 .heading-add {
     max-width: 620px;
     height: 48px;
     background-color: #fafafb;
     margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -155,16 +156,12 @@ h2 {
     background-color: #19a2ec;
     text-align: center;
 }
-.section_5 {
-    
-       
-}
-.section_6 {
-  
-}
-.section_7 {
-    
-}
+
+.section_5 {}
+
+.section_6 {}
+
+.section_7 {}
 
 .btn-inscription {
     font-size: 14px;
@@ -437,11 +434,11 @@ h2 {
 }
 
 .post {
-    width:317px;
+    width: 317px;
     height: 380px;
     background-color: #f1f1f2;
     margin-top: 24px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -532,100 +529,62 @@ h3 {
 
 .add-container {
     max-width: 620px;
-    height: 425px;
+    height: 446px;
     background-color: #f1f1f2;
-    margin-left: 9px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top: 1px solid #d5d5d5;
-}
-/*@media only screen and (max-width:500px) {
-	.row {
-		width : 100%;
-	}
-	.row > div { 
-		margin : 0 1%;
-	}
-	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { 
-		width : 98%; 
-		float : none;
-	}
-}*/
-/*
-
-
-.heading-add {
-    width: 300px;
-    height: 48px;
-    background-color: #fafafb;
-    margin-top: 12px;
-    margin-left: 9px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-h2 {
-    font-family: latobold;
-    font-size: 17px;
-    text-align: center;
-    color: 363636;
-    padding-top: 14px;
-}
-
-.add-container {
-    width: 300px;
-    height: 425px;
-    background-color: #f1f1f2;
-    margin-left: 9px;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     border-top: 1px solid #d5d5d5;
 }
 
 .input-titre-humeur {
-    width: 260px;
+    min-width: 94%;
     height: 41px;
     background-color: ffffff;
     border: none;
     border-radius: 4px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: latoregular;
     font-size: 14px;
     color: #8c8a8a;
 }
 
 .input-plus {
-    width: 260px;
+    min-width: 94%;
     height: 182px;
     background-color: ffffff;
     border: none;
     border-radius: 4px;
     margin-top: 8px;
-    margin-left: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: latolight;
     font-size: 60px;
     color: #8c8a8a;
 }
 
 .text-description {
-    width: 260;
-    height: 117px;
+    min-width: 94%;
+    height: 183px;
     background-color: ffffff;
     border: none;
     border-radius: 4px;
     margin-top: 8px;
-    margin-left: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: latoregular;
     font-size: 14px;
     color: #8c8a8a;
 }
 
 .btn-edit {
-    width: 82px;
+    min-width: 29%;
     height: 40px;
     float: left;
-    margin-left: 20px;
+    margin-left: 3%;
     margin-top: 8px;
     background: url('../img/img-crayon.png') no-repeat;
     border: none;
@@ -633,10 +592,10 @@ h2 {
 }
 
 .btn-geoloc {
-    width: 82px;
+    min-width: 29%;
     height: 40px;
     float: left;
-    margin-left: 8px;
+    margin-left: 36%;
     margin-top: 8px;
     background: url('../img/img-bouton-geo.png') no-repeat;
     border: none;
@@ -644,12 +603,12 @@ h2 {
 }
 
 .btn-envoi {
-    width: 82px;
+    min-width: 29%;
     height: 40px;
     float: left;
-    margin-left: 8px;
+    margin-left: 3%;
     margin-top: 8px;
     background: url('../img/img-bouton-envoyer.png') no-repeat;
     border: none;
     border-radius: 4px;
-}*/
+}

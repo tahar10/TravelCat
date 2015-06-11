@@ -31,18 +31,20 @@
     <div class="add-container">
         <div class="grid">
             <div class="row">
-                <div class="col col-6">
-                    <form name="addForm" method="post" action="#">
+                <form name="addForm" method="post" action="#">
+                    <div class="col col-3">
                         <input class="input-titre-humeur" type="text" value="" placeholder="Titre / humeur" />
-                        <input class="input-plus" type="button" value="+" />
                         <textarea class="text-description" name="description" placeholder="Description"></textarea>
+                        <input class="btn-envoi" type="submit" value="" />
+                    </div>
+                    <div class="col col-3">
+                        <input class="input-plus" type="button" value="+" />
                         <input class="btn-edit" type="button" value="" />
                         <input class="btn-geoloc" type="button" value="" />
-                        <input class="btn-envoi" type="submit" value="" />
-
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
+            <div class="clearfix"></div>
         </div>
     </div>
 </body>
