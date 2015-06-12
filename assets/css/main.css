@@ -647,8 +647,8 @@ h2 {
 }
 
 .post {
-    width: 317px;
-    height: 380px;
+    max-width: 317px;
+    min-height: 380px;
     background-color: #f1f1f2;
     margin-top: 24px;
     margin-left: auto;
@@ -678,7 +678,7 @@ h3 {
 
 .bloc2 {
     margin-left: 19px;
-    width: 60px;
+    min-width: 60px;
     float: left;
     margin-top: 8px;
 }
@@ -696,7 +696,7 @@ h3 {
 
 .bloc3 {
     float: right;
-    width: 112px;
+    min-width: 112px;
     margin-right: 10px;
     margin-top: 8px;
 }
@@ -715,7 +715,7 @@ h3 {
 .bar {
     background: url('../img/img-traits-separation-desktop.png') no-repeat;
     background-color: #fafafb;
-    height: 41px;
+    min-height: 41px;
     margin-top: 41px;
 }
 
@@ -730,12 +730,12 @@ h3 {
     float: left;
     margin-left: 75px;
     margin-top: 7px;
-    width: 30px;
+    max-width: 30px;
 }
 
 .icone3 {
     float: right;
     margin-right: 37px;
     margin-top: 5px;
-    width: 30px;
+    max-width: 30px;
 }
