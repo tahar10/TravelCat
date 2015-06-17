@@ -1,0 +1,23 @@
+{
+  "name": "travelcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahar10/TravelCat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahar10/TravelCat/issues"
+  },
+  "homepage": "https://github.com/tahar10/TravelCat#readme",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "normalize.css-browser": "^2.1.2-1"
+  }
+}
