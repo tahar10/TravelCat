@@ -3,6 +3,10 @@ var autoPrefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var imageMin = require('gulp-imagemin');
 var cssbeautify = require('gulp-cssbeautify');
+var minifyCss = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
+
+gulp.task('default', ['styles', 'serve', 'opt-images'])
 
 /* ==================================================
      SERVER
@@ -55,4 +59,16 @@ gulp.task('indent-css', function() {
     return gulp.src('./assets/css/*.css')
         .pipe(cssbeautify())
         .pipe(gulp.dest('./assets/css/'));;
+});
+
+/* ==================================================
+     MINIFICATION CSS
+================================================== */
+
+gulp.task('minify-css', function() {
+  return gulp.src('./assets/css/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(minifyCss())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./assets/css/'));
 });
